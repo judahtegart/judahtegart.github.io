@@ -7,24 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<script src="script.js"></script>
-<link hidden rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>judabaga.me</h1>
-    </header>
-    <div class="container">
-        <form id="passwordForm">
-            <label for="password">Enter password:</label>
-            <input type="password" id="password" name="password" required autofocus>
-            <button type="submit">Enter</button>
-        </form>
-        <div class="error" id="errorMsg" style="display:none;">Incorrect password. Try again.</div>
-    </div>
-    <a href="mailto:judah@judabaga.me" class="contact-link">Contact</a>
+    <main class="container">
+        <section class="server-info">
+            <div class="server-item">
+                <strong>Minecraft Server:</strong>
+                <span id="mc-address">play.judabaga.me</span>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(document.getElementById('mc-address').textContent).then(()=>alert('Address copied to clipboard'))">Copy</button>
+            </div>
+
+            <div class="server-item">
+                <a id="discord-link" href="https://discord.gg/PEw2ZdF77X" target="_blank" rel="noopener noreferrer">Join our Discord</a>
+            </div>
+
+            <a href="mailto:judah@judabaga.me" class="contact-link">Contact</a>
+        </section>
+    </main>
+   
     <footer>
-        &copy; 2025 Judah Tegart. Made with ❤️
+        &copy; 2026 Judah Tegart. Made with ❤️
     </footer>
 </body>
 </html>
